@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "jquery-ui-bootstrap-rails"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kristian Mandrup"]
-  s.date = "2012-09-03"
+  s.date = "2014-02-14"
   s.description = "Use jQuery UI with Twitter Bootstrap in your Rails app :)"
   s.email = "kmandrup@gmail.com"
   s.extra_rdoc_files = [
@@ -27,6 +27,9 @@ Gem::Specification.new do |s|
     "VERSION",
     "jquery-ui-bootstrap-rails.gemspec",
     "lib/jquery-ui-bootstrap-rails.rb",
+    "lib/jquery-ui-bootstrap-rails/engine.rb",
+    "lib/jquery-ui-bootstrap-rails/engine3.rb",
+    "lib/jquery-ui-bootstrap-rails/railtie.rb",
     "spec/index.html",
     "spec/spec_helper.rb",
     "vendor/assets/images/ui-bootstrap/custom-theme/ui-bg_flat_0_aaaaaa_40x100.png",
@@ -56,18 +59,17 @@ Gem::Specification.new do |s|
     "vendor/assets/javascripts/wijmo/jquery.bgiframe-2.1.3-pre.js",
     "vendor/assets/javascripts/wijmo/jquery.mousewheel.min.js",
     "vendor/assets/javascripts/wijmo/jquery.wijmo-open.all.min.js",
-    "vendor/assets/stylesheets/ui-bootstrap/jquery-ui-bootstrap.css",
-    "vendor/assets/stylesheets/ui-bootstrap/jquery-ui-1.9.2.custom.css",
-    "vendor/assets/stylesheets/ui-bootstrap/jquery.ui.1.9.2.ie.css",
+    "vendor/assets/stylesheets/ui-bootstrap/jquery-ui-bootstrap.css.scss",
+    "vendor/assets/stylesheets/ui-bootstrap/jquery-ui-bootstrap.latest.css.scss",
     "vendor/assets/stylesheets/ui-bootstrap/ui-wijmo.css",
     "vendor/assets/stylesheets/ui-date_range_picker/ui.daterangepicker.css",
-    "vendor/assets/stylesheets/ui-file_input/enhance.css",
+    "vendor/assets/stylesheets/ui-file_input/enhance.css.scss",
     "vendor/assets/stylesheets/wijmo/jquery.wijmo-open.2.2.0.css"
   ]
   s.homepage = "http://github.com/kristianmandrup/jquery-ui-bootstrap-rails"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.25"
   s.summary = "jQuery UI Bootstrap for Rails asset pipeline"
 
   if s.respond_to? :specification_version then
